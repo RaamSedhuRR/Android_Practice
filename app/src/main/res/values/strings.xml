@@ -35,6 +35,11 @@
     <string name="btnAddDB">Add Data</string>
     <string name="btnShowDB">Show Data</string>
     <string name="btnVolley">Volley</string>
+    <string name="btnRetrofit">Retrofit</string>
+    <string name="btnGetCall">Get Call</string>
+    <string name="btnGetQuery">Get Call using Query</string>
+    <string name="btnPostCall">Post Call</string>
+    <string name="btnGetRouteCall">Get Call using Route</string>
     <string name="txtData">Click show to view the saved items !</string>
     <string name="txtGetRequest">Click Here to see Get Request</string>
     <string name="txtFloat">Enter a Float</string>

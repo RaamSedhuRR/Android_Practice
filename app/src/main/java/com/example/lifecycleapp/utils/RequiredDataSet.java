@@ -1,6 +1,8 @@
 package com.example.lifecycleapp.utils;
 
+import com.example.lifecycleapp.database.User;
 import com.example.lifecycleapp.model.CMEmployee;
+import com.example.lifecycleapp.retrofit.UserApi;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +12,8 @@ public class RequiredDataSet{
     public int i;
 
     public List<CMEmployee> employeeDetails = new ArrayList<>();
+
+    public List<UserApi> userDetails = new ArrayList<>();
 
     public List<CMEmployee> employeeDetailsDuplicate= new ArrayList<>();
 
@@ -37,6 +41,20 @@ public class RequiredDataSet{
 
         }
         return employeeDetails;
+    }
+
+    public List<UserApi> AddEmployeesRetrofit()
+    {
+        for(i=0;i<7;i++)
+
+        {
+            userDetails.add(new UserApi("1","1","HarryPotter","part-1"));
+            userDetails.add(new UserApi("1","1","HarryPotter","part-2"));
+            userDetails.add(new UserApi("1","1","HarryPotter","part-3"));
+            userDetails.add(new UserApi("1","1","HarryPotter","part-4"));
+            userDetails.add(new UserApi("1","1","HarryPotter","part-5"));
+        }
+        return userDetails;
     }
     public List<CMEmployee> AddEmployees1(){
 

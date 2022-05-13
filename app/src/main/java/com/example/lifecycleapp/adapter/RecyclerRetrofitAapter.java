@@ -14,35 +14,35 @@ import com.example.lifecycleapp.view.RecyclerUserListViewHolder;
 
 import java.util.List;
 
-public class RecyclerVolleyGetAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecyclerRetrofitAapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
     Context context;
 
-    List<User> userList;
-    public RecyclerVolleyGetAdapter(Context context,List<User> userList){
+    List<UserApi> userApiList;
+
+    public RecyclerRetrofitAapter(Context context,List<UserApi> userApiList){
         this.context = context;
-        this.userList = userList;
+        this.userApiList = userApiList;
 
     }
-
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder (@NonNull ViewGroup parent,int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-
         return new RecyclerUserListViewHolder(UserListDataStyleBinding
                 .inflate(layoutInflater,parent,false));
     }
 
     @Override
     public void onBindViewHolder (@NonNull RecyclerView.ViewHolder holder,int position) {
-        (( RecyclerUserListViewHolder ) holder).bindView(userList.get(position).getId(),
-                userList.get(position).getName(),
-                userList.get(position).getAge(),userList.get(position).getPhoneNumber());
+        (( RecyclerUserListViewHolder ) holder).bindView(userApiList.get(position).getId(),
+                userApiList.get(position).getUserId(),
+                userApiList.get(position).getTitle(),userApiList.get(position).getBody());
     }
 
     @Override
     public int getItemCount () {
-        return userList.size();
+        return userApiList.size();
     }
 }

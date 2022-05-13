@@ -38,6 +38,7 @@
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_people_list.xml" value="0.2112420670897552" />
         <entry key="app/src/main/res/layout/fragment_relative_layout.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/fragment_retrofit.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_save_data_sql_db.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_shared_preferences.xml" value="0.2112420670897552" />
         <entry key="app/src/main/res/layout/fragment_volley.xml" value="0.29243266353142366" />
