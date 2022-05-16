@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/style_corner_view.xml" value="0.2885" />
         <entry key="app/src/main/res/layout/activity_constraint_layoout_with_grid.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_constraint_layout_with_recycler_view_data_binding.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/activity_dagger2.xml" value="0.28003420265070544" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_fragment_layout.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/activity_fragment_layouts.xml" value="0.2112420670897552" />
@@ -29,6 +30,7 @@
         <entry key="app/src/main/res/layout/activity_third.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_bound_service.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_constraint_layout.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/fragment_dagger2.xml" value="0.29243266353142366" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2112420670897552" />
         <entry key="app/src/main/res/layout/fragment_foreground_services.xml" value="0.2112420670897552" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2112420670897552" />

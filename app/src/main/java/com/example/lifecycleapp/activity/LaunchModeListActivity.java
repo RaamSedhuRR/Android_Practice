@@ -103,6 +103,8 @@ public class LaunchModeListActivity extends AppCompatActivity {
             sendBroadcast(broadcastIntent);
         });
 
+        binding.btnDagger2.setOnClickListener(view -> intentToAnotherActivity("Dagger 2 Activity"));
+
     }
 
     private void intentToAnotherActivity(
@@ -178,6 +180,12 @@ public class LaunchModeListActivity extends AppCompatActivity {
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "SQL DB Activity",
                                Toast.LENGTH_LONG).show();
+                break;
+            }
+            case "Dagger 2 Activity": {
+                Intent intent = new Intent(LaunchModeListActivity.this,
+                                           Dagger2Activity.class);
+                startActivity(intent);
                 break;
             }
 

@@ -13,13 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.lifecycleapp.adapter.RecyclerRetrofitAapter;
-import com.example.lifecycleapp.adapter.RecyclerVolleyGetAdapter;
-import com.example.lifecycleapp.database.User;
 import com.example.lifecycleapp.databinding.FragmentRetrofitBinding;
 import com.example.lifecycleapp.retrofit.ApiClient;
 import com.example.lifecycleapp.retrofit.ApiInterface;
 import com.example.lifecycleapp.retrofit.UserApi;
-import com.example.lifecycleapp.utils.RequiredDataSet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,9 +63,11 @@ public class RetrofitFragment extends Fragment {
             Call<List<UserApi>> Call=apiInterface.getUsers();
             Call.enqueue(new Callback<List<UserApi>>() {
                 @Override
-                public void onResponse (@NonNull Call<List<UserApi>> call,@NonNull Response<List<UserApi>> response) {
+                public void onResponse (@NonNull Call<List<UserApi>> call,@NonNull Response
+                        <List<UserApi>> response) {
                     Log.e(TAG,"Success :" + response.body());
                     userList =response.body();
+                    assert userList != null;
                     Log.e(TAG,String.valueOf(userList.size()));
 
                     fragmentRetrofitBinding.recyclerRetrofitList
